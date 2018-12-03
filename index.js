@@ -13,7 +13,6 @@ bot.on('message', ({forwardMessage, reply, update: {message}, telegram }) => {
     forwardMessage(-1001168418071, message.from.id, message['message_id'])
     return reply('Thanks for contacting')
   } else {
-    console.log(telegram);
     telegram.sendMessage(message.reply_to_message.forward_from.id, message.text)
   }
 })
