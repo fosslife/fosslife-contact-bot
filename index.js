@@ -11,7 +11,7 @@ bot.help(({ reply }) => reply('Type anything and send, the message will be autom
 bot.on('message', ({forwardMessage, reply, update: {message}, telegram }) => {
   if (message.chat.id !== -1001168418071) {
     forwardMessage(-1001168418071, message.from.id, message['message_id'])
-    return reply('Thanks for contacting')
+    return reply('Thanks for contacting, Admins will get back to you soon :D')
   } else {
     telegram.sendMessage(message.reply_to_message.forward_from.id, message.text)
   }
