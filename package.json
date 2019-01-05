@@ -20,6 +20,7 @@
   "author": "Sparkenstein <zetabytes.pp@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.18.0",
     "micro-bot": "^2.5.1"
   },
   "devDependencies": {
